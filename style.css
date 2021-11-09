@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@font-face {
+	font-family: blogger;
+	src: url(Blogger_Sans.otf) format("otf"), url(Blogger_Sans.otf) format("opentype");
+	font-weight: 400
+}
+
+.bg{
+	background:#7b7b7c 50% no-repeat url(bg1.jpg);
+    background-size:cover;
+    -webkit-animation:30s linear infinite a;
+    animation:30s linear infinite a;
+    background-size:cover;
+    height:100%;
+    left:0;
+    position: fixed;
+    top:0;
+	width:calc(100vw + 500px);
+}
+
+body.dark .bg{
+	background:#7b7b7c 50% no-repeat url(bg2.jpg); 
+    background-size:cover;
+    -webkit-animation:30s linear infinite a;
+    animation:30s linear infinite a;
+    background-size:cover;
+    height:100%;
+    left:0;
+    position:fixed;
+    top:0;
+    width:calc(100vw + 500px);
+}
+
+@keyframes a {
+	0% {
+		left: 0
+	}
+	50% {
+		left: -500px
+	}
+	to {
+		left: 0
+	}
+}
+
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth 0.5s;
+	user-select: none;
+	transition: 0.5s;
+}
+
+a {
+	color: inherit
+}
+
+body {
+	font-family: blogger;
+	font-size: 30px;
+	font-weight: 400;
+	margin: 0;
+}
+
+button {
+	background-color: #00000080;
+	margin: 25px 0px;
+	padding: 1px 1px;
+	border: none;
+}
+
+body.dark button {
+	background-color: #ffffff80;
+}
+
+label {
+	display: inline-block;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	cursor: pointer;
+}
+
+body.dark label {
+	color: rgb(0, 0, 0);
+}
+
+.wrap {
+	color: #fff;
+	min-height: 100vh;
+	min-width: 320px;
+	overflow: hidden;
+	position: relative;
+}
+
+body.dark .wrap{
+	color: rgb(0, 0, 0);
+	min-height: 100vh;
+	min-width: 320px;
+	overflow: hidden;
+	position: relative
+}
+
+.content {
+	max-width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 100vh;
+	padding: 90px 15px;
+	position: relative;
+	z-index: 2
+}
+
+.line1 {
+	line-height: 1.2;
+	margin-bottom: 50px;
+	max-width: 600px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	position: relative
+}
+
+.line1:before {
+	background: linear-gradient(90deg, rgba(0, 0, 0, .5) 60%, transparent);
+	box-sizing: border-box;
+	content: "";
+	height: 100%;
+	left: calc(-50vw + 480px);
+	position: absolute;
+	top: 0;
+	width: 100vw
+}
+
+body.dark .line1:before {
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 60%, transparent);
+	box-sizing: border-box;
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100vw
+}
+
+.hText{
+	font-size: 60px;
+	position: relative;
+	display: block;
+	font-family: 'Courgette', cursive;
+}
+.pText {
+	display: block;
+	position: relative;
+	font-size: 30px;
+}
+
+
+@media (max-width:989px) {
+	.line1:before{
+		left: -15px;
+		width: 1024px
+	}
+}
+
+@media (max-width:767px) {
+	.line1{
+		z-index: 2
+	}
+}
+
+@media (max-width:600px) {
+	body {
+		font-size: 24px
+	}
+	.content {
+		padding-top: 50px;
+		padding-bottom: 50px
+	}
+	.line1 {
+		margin-bottom: 60px
+	}
+}

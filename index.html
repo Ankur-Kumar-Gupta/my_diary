@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankur Gupta</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body class="">
+
+  <div class="wrap">
+    <div class="bg"></div>
+    <div class="content">
+      <button onclick="change()">
+          <label id="dm-btn">
+              Dark Mode: Off
+          </label>
+        </button>
+        <script>
+          function change() {
+            var x = document.getElementById("dm-btn");
+            if(x.innerHTML === "Dark Mode: On")
+            {
+                x.innerHTML = "Dark Mode: Off";
+            }
+            else{
+                x.innerHTML = "Dark Mode: On";
+            }
+          };
+        </script>
+      <div class="line1">
+        <div class="hText">
+          My Diary
+        </div>
+      </div>
+      <div class="line1">
+        <div class="pText">
+          <details>
+            <summary>Feb. 8, 2021</summary><br>
+              Hello There ! Its me Ankur ... Hello There ! Its me Ankur ... Hello There ! Its me Ankur ...
+              Hello There ! Its me Ankur ... Hello There ! Its me Ankur ... Hello There ! Its me Ankur ...
+              Hello There ! Its me Ankur ... Hello There ! Its me Ankur ... Hello There ! Its me Ankur ...
+          </details>
+        </div>
+      </div>
+      <div class="line1">
+        <div class="pText">
+          <details>
+            <summary>Feb. 7, 2021</summary><br>
+              Hello There ! Its me Ankur ... Hello There ! Its me Ankur ... Hello There ! Its me Ankur ...
+              Hello There ! Its me Ankur ... Hello There ! Its me Ankur ... Hello There ! Its me Ankur ...
+              Hello There ! Its me Ankur ... Hello There ! Its me Ankur ... Hello There ! Its me Ankur ...
+          </details>
+        </div>
+      </div>
+</body>
+
+</html>
